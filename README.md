@@ -7,8 +7,9 @@ persisted to `localStorage`.
 ## How to run
 
 ```bash
-npm install
-npm run dev
+npm install     # or: yarn install
+npm run dev     # or: yarn dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000). No backend or environment variables are
@@ -66,7 +67,7 @@ interface WorkspaceItem {
   name: string;
   type: "folder" | "file";
   parentId: string | null;
-  content?: string;   // files only
+  content?: string; // files only
   createdAt: number;
   updatedAt: number;
 }
