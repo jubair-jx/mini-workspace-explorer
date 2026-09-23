@@ -35,7 +35,7 @@ export function TreeNode({ item, depth, onNavigate }: TreeNodeProps) {
         }}
         style={{ paddingLeft: depth * 16 + 8 }}
         className={cn(
-          "group flex w-full items-center gap-1.5 rounded-lg py-1.5 pr-2 text-left text-sm transition-colors",
+          "group flex w-full cursor-pointer items-center gap-1.5 rounded-lg py-1.5 pr-2 text-left text-sm transition-colors",
           isSelected
             ? "bg-indigo-50 font-medium text-indigo-700 dark:bg-indigo-500/15 dark:text-indigo-300"
             : "text-zinc-600 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800/70"
@@ -50,6 +50,7 @@ export function TreeNode({ item, depth, onNavigate }: TreeNodeProps) {
           }}
           className={cn(
             "flex h-4 w-4 shrink-0 items-center justify-center rounded text-zinc-400 transition-transform dark:text-zinc-500",
+            hasChildren && "cursor-pointer",
             hasChildren && isExpanded && "rotate-90",
             !hasChildren && "invisible"
           )}

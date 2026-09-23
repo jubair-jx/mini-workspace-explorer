@@ -24,8 +24,8 @@ export function Breadcrumb() {
               disabled={isLast}
               className={
                 isLast
-                  ? "font-semibold text-zinc-900 dark:text-zinc-100"
-                  : "text-zinc-500 transition-colors hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400"
+                  ? "cursor-default font-semibold text-zinc-900 dark:text-zinc-100"
+                  : "cursor-pointer text-zinc-500 transition-colors hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400"
               }
             >
               {item.name}

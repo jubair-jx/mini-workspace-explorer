@@ -76,8 +76,8 @@ export function FileEditor({ fileId }: { fileId: string }) {
                   onClick={() => selectFolder(item.id)}
                   className={
                     isLast
-                      ? "font-semibold text-zinc-900 dark:text-zinc-100"
-                      : "text-zinc-500 transition-colors hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400"
+                      ? "cursor-default font-semibold text-zinc-900 dark:text-zinc-100"
+                      : "cursor-pointer text-zinc-500 transition-colors hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400"
                   }
                 >
                   {item.name}
@@ -102,7 +102,7 @@ export function FileEditor({ fileId }: { fileId: string }) {
             type="button"
             onClick={handleSave}
             disabled={!isDirty}
-            className="flex items-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-indigo-500 disabled:cursor-not-allowed disabled:bg-zinc-300 disabled:text-zinc-500 dark:disabled:bg-zinc-800 dark:disabled:text-zinc-500"
+            className="flex cursor-pointer items-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-indigo-500 disabled:cursor-not-allowed disabled:bg-zinc-300 disabled:text-zinc-500 dark:disabled:bg-zinc-800 dark:disabled:text-zinc-500"
           >
             <Save className="h-4 w-4" />
             <span className="hidden sm:inline">Save</span>
@@ -111,7 +111,7 @@ export function FileEditor({ fileId }: { fileId: string }) {
             type="button"
             onClick={() => setDeleting(true)}
             aria-label="Delete file"
-            className="flex h-8 w-8 items-center justify-center rounded-lg text-zinc-400 transition-colors hover:bg-red-50 hover:text-red-500 dark:hover:bg-red-500/10 dark:hover:text-red-400"
+            className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg text-zinc-400 transition-colors hover:bg-red-50 hover:text-red-500 dark:hover:bg-red-500/10 dark:hover:text-red-400"
           >
             <Trash2 className="h-4 w-4" />
           </button>
@@ -119,7 +119,7 @@ export function FileEditor({ fileId }: { fileId: string }) {
             type="button"
             onClick={() => (file.parentId ? selectFolder(file.parentId) : closeFile())}
             aria-label="Close file"
-            className="flex h-8 w-8 items-center justify-center rounded-lg text-zinc-400 transition-colors hover:bg-zinc-100 hover:text-zinc-600 dark:hover:bg-zinc-800 dark:hover:text-zinc-300"
+            className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg text-zinc-400 transition-colors hover:bg-zinc-100 hover:text-zinc-600 dark:hover:bg-zinc-800 dark:hover:text-zinc-300"
           >
             <X className="h-4 w-4" />
           </button>

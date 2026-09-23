@@ -22,7 +22,7 @@ export function SearchInput() {
           type="button"
           onClick={() => setSearchQuery("")}
           aria-label="Clear search"
-          className="absolute right-2 top-1/2 flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200"
+          className="absolute right-2 top-1/2 flex h-5 w-5 -translate-y-1/2 cursor-pointer items-center justify-center rounded text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200"
         >
           <X className="h-3.5 w-3.5" />
         </button>

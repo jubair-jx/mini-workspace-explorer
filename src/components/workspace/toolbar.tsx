@@ -17,7 +17,7 @@ export function Toolbar() {
         <button
           type="button"
           onClick={() => setDialog("folder")}
-          className="flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 shadow-sm transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
+          className="flex cursor-pointer items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 shadow-sm transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
         >
           <FolderPlus className="h-4 w-4" />
           <span className="hidden sm:inline">New Folder</span>
@@ -25,7 +25,7 @@ export function Toolbar() {
         <button
           type="button"
           onClick={() => setDialog("file")}
-          className="flex items-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-indigo-500"
+          className="flex cursor-pointer items-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-indigo-500"
         >
           <FilePlus className="h-4 w-4" />
           <span className="hidden sm:inline">New File</span>

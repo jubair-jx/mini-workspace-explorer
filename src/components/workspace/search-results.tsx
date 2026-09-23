@@ -41,7 +41,7 @@ export function SearchResults() {
                 openFile(item.id);
               }
             }}
-            className="flex items-center gap-3 rounded-xl border border-zinc-200 bg-white p-3 text-left shadow-sm transition-colors hover:border-indigo-300 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-indigo-500/50"
+            className="flex cursor-pointer items-center gap-3 rounded-xl border border-zinc-200 bg-white p-3 text-left shadow-sm transition-colors hover:border-indigo-300 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-indigo-500/50"
           >
             <div
               className={

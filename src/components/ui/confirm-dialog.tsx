@@ -32,7 +32,7 @@ export function ConfirmDialog({
         <button
           type="button"
           onClick={onCancel}
-          className="rounded-lg px-3.5 py-2 text-sm font-medium text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800"
+          className="cursor-pointer rounded-lg px-3.5 py-2 text-sm font-medium text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800"
         >
           {cancelLabel}
         </button>
@@ -40,7 +40,7 @@ export function ConfirmDialog({
           type="button"
           onClick={onConfirm}
           className={cn(
-            "rounded-lg px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition-colors",
+            "cursor-pointer rounded-lg px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition-colors",
             danger
               ? "bg-red-600 hover:bg-red-500"
               : "bg-indigo-600 hover:bg-indigo-500"

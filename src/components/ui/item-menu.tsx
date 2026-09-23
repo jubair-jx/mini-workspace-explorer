@@ -33,7 +33,7 @@ export function ItemMenu({ onRename, onDelete }: ItemMenuProps) {
         }}
         aria-label="Item actions"
         className={cn(
-          "flex h-7 w-7 items-center justify-center rounded-md text-zinc-400 transition-colors",
+          "flex h-7 w-7 cursor-pointer items-center justify-center rounded-md text-zinc-400 transition-colors",
           "hover:bg-zinc-100 hover:text-zinc-700 dark:hover:bg-zinc-800 dark:hover:text-zinc-200",
           open && "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
         )}
@@ -57,7 +57,7 @@ export function ItemMenu({ onRename, onDelete }: ItemMenuProps) {
                 setOpen(false);
                 onRename();
               }}
-              className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm text-zinc-700 hover:bg-zinc-100 dark:text-zinc-200 dark:hover:bg-zinc-800"
+              className="flex w-full cursor-pointer items-center gap-2 px-3 py-2 text-left text-sm text-zinc-700 hover:bg-zinc-100 dark:text-zinc-200 dark:hover:bg-zinc-800"
             >
               <Pencil className="h-3.5 w-3.5" /> Rename
             </button>
@@ -68,7 +68,7 @@ export function ItemMenu({ onRename, onDelete }: ItemMenuProps) {
                 setOpen(false);
                 onDelete();
               }}
-              className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-500/10"
+              className="flex w-full cursor-pointer items-center gap-2 px-3 py-2 text-left text-sm text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-500/10"
             >
               <Trash2 className="h-3.5 w-3.5" /> Delete
             </button>

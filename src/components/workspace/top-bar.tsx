@@ -15,7 +15,7 @@ export function TopBar({ onMenuClick }: TopBarProps) {
         type="button"
         onClick={onMenuClick}
         aria-label="Toggle sidebar"
-        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-zinc-500 hover:bg-zinc-100 md:hidden dark:text-zinc-400 dark:hover:bg-zinc-800"
+        className="flex h-9 w-9 shrink-0 cursor-pointer items-center justify-center rounded-lg text-zinc-500 hover:bg-zinc-100 md:hidden dark:text-zinc-400 dark:hover:bg-zinc-800"
       >
         <Menu className="h-5 w-5" />
       </button>
